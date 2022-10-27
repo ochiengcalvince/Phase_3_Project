@@ -126,12 +126,12 @@ To check for the relationship of various factors with H1N1 and Seasonal vaccine;
 ### Modeling
 We build a couple of models using different featuers in our dataset to try  predicting whether an individual will go for H1N1 vaccine or Seasonal Flu Vaccines.The models have different levels of  accuracy.   
             - Random forest
-            - Decision Tree 
+            - multiple output classifier 
             - Binary relevance (Logistic Regression)
             - Binary relevannce (Gaussian)
             - XGBoost
             
- Training the model
+ ### Training the model
  
 The model is trained with the training features (X_train) and training labels (y_train) and is given some
 new   data   it   hasn't   seen   before   (X_test)   to   evaluate   how   well   it   classifies   the   new   data.
@@ -144,6 +144,14 @@ estimator that scales and translates each feature individually such that it is i
 the training se
  
  ---
+ 
+ ### Reccommendations
+ 
+Since vaccination is the main preventive strategy for influenza, optimizing formations and
+identifying factors that interfere with the administration of the vaccine is vital. Identifying factors
+that produce a priming effect and enhance response is important in understanding how to
+improve efficiency of influenza vaccine. Prospective safety monitoring followed by rigorous
+signal refinement is critical to inform decision making by regulatory and public health agencies
 
 
 ### Conclusion
@@ -154,18 +162,11 @@ demographic factors, what people perceive and day to day behaviors towards preve
 infection.
 
 ---
- ### Reccommendations
+
  
-Since vaccination is the main preventive strategy for influenza, optimizing formations and
-identifying factors that interfere with the administration of the vaccine is vital. Identifying factors
-that produce a priming effect and enhance response is important in understanding how to
-improve efficiency of influenza vaccine. Prospective safety monitoring followed by rigorous
-signal refinement is critical to inform decision making by regulatory and public health agencies.
+### Limitations
 
----
-7. LIMITATIONS
-
-Vaccination data was obtained from electronic records hence subject to errors and 
+Vaccination data was obtained from electronic records hence subject to errors and misclassification
 
 
 
