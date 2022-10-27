@@ -10,6 +10,10 @@
 - [Data Understanding](#data-understanding)
 - [Data Preparation](#data-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Preprocessing](#preprocessing)
+- [Conclusion](#conclusion)
+- [Recommendation](#recommendation)
+- [Limitations](#limitations)
 
 ---
 ### Business Underastanding
@@ -43,9 +47,11 @@ There are four types of influenza viruses: A, B, C and D. Human influenza A and 
  
  ### Project goal
  Our main goal for the project is to determine how the following factors affect people's decisions to get the H1N1 and seasonal flu vaccine;
- * People's Backgrounds(age,education,race,sex,marital status,employment status)
- * Opinions on H1N1 vaccine and seasonal flu vaccine.
- * Health behaviours(washing hands,buying face masks,avoiding close contact with others,taking antiviral medication,avoiding touching your face)
+ * To determine how People's Backgrounds(age,education,race,sex,marital status,employment status) affect their decision to get the vaccinated.
+ 
+ * To determine how people's opinions on H1N1 vaccine and seasonal flu vaccine affect  people's decision to get the vaccine.
+ 
+ *To determine how health behaviours(washing hands,buying face masks,avoiding close contact with others,taking antiviral medication,avoiding touching your face) affect people's decision to get the vaccine.
  
  ---
  
@@ -111,15 +117,58 @@ Represenation of the age group dataset
 ![image](https://user-images.githubusercontent.com/110459255/198104650-de7efbbf-9e9b-43e9-b9b7-64c70a6bc198.png)
 The elderly mainly obtain vaccination compared to the rest of the age groups. This could be attributed to the low immune of the elderly people hence the high risk of flu transmission. The rest of the age groups comprising of young adults have a relatively stronger immune making them less prone to contracting the flu illness.
 
+To check for the relationship of various factors with H1N1 and Seasonal vaccine; education, gender, employment status and age group were plotted against the two vaccines.
+![image](https://user-images.githubusercontent.com/110459255/198158069-74518df4-dd16-4359-9049-f238b59ca7f4.png)
+
 
 ---
 
 ### Modeling
+We build a couple of models using different featuers in our dataset to try  predicting whether an individual will go for H1N1 vaccine or Seasonal Flu Vaccines.The models have different levels of  accuracy.   
+            - Random forest
+            - Decision Tree 
+            - Binary relevance (Logistic Regression)
+            - Binary relevannce (Gaussian)
+            - XGBoost
+            
+ Training the model
+ 
+The model is trained with the training features (X_train) and training labels (y_train) and is given some
+new   data   it   hasn't   seen   before   (X_test)   to   evaluate   how   well   it   classifies   the   new   data.
+The training or test split percentages do not however affect our workflow. 70% of the data was set for
+training purposes while 30% was set for testing purposes.
 
-
+MinMaxScaler
+This is a technique used to transform features by scaling each feature to a given range. It is an 
+estimator that scales and translates each feature individually such that it is in the given range on 
+the training se
+ 
+ ---
 
 
 ### Conclusion
+Our study demonstrates that college graduates, females, those not in the labor force and the 
+elderly have the highest turn out in obtaining both the h1n1 vaccine and the seasonal vaccine. 
+Evidently, the probability of an individual to get vaccinated against flu is often dictated by; 
+demographic factors, what people perceive and day to day behaviors towards preventing 
+infection.
+
+---
+ ### Reccommendations
+ 
+Since vaccination is the main preventive strategy for influenza, optimizing formations and
+identifying factors that interfere with the administration of the vaccine is vital. Identifying factors
+that produce a priming effect and enhance response is important in understanding how to
+improve efficiency of influenza vaccine. Prospective safety monitoring followed by rigorous
+signal refinement is critical to inform decision making by regulatory and public health agencies.
+
+---
+7. LIMITATIONS
+
+Vaccination data was obtained from electronic records hence subject to errors and 
+
+
+
 
 
  
