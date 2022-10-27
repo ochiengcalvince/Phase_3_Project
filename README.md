@@ -27,7 +27,7 @@ There are four types of influenza viruses: A, B, C and D. Human influenza A and 
 
 `seasonal_vaccine` - Whether respondent received seasonal flu vaccine.
 
-
+---
  ###  Business objectives
  Listed below are ways in which the public can help curb the spread of the flu:
 
@@ -153,7 +153,7 @@ that produce a priming effect and enhance response is important in understanding
 improve efficiency of influenza vaccine. Prospective safety monitoring followed by rigorous
 signal refinement is critical to inform decision making by regulatory and public health agencies
 
-
+---
 ### Conclusion
 Our study demonstrates that college graduates, females, those not in the labor force and the 
 elderly have the highest turn out in obtaining both the h1n1 vaccine and the seasonal vaccine. 
@@ -168,7 +168,7 @@ infection.
 
 Vaccination data was obtained from electronic records hence subject to errors and misclassification
 
-
+---
 
 
 
